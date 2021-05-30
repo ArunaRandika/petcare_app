@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.petcare">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PetCare">
+        <activity android:name=".SearchByDate"></activity>
+        <activity android:name=".SearchByPetName" />
+        <activity android:name=".SearchByOwnerResults" />
+        <activity android:name=".SearchBy" />
+        <activity android:name=".DailyStats" />
+        <activity android:name=".Consultations" />
+        <activity android:name=".AddPatient" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

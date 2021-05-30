@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Consultations">
+
+    <EditText
+        android:id="@+id/cons_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:digits="1234567890"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/cons_petname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/cons_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:digits="1234567890"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/cons_petname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821" />
+
+    <EditText
+        android:id="@+id/cons_charges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:digits="1234567890"
+        android:ems="10"
+        android:hint="Charges"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cons_diagnosis"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <EditText
+        android:id="@+id/cons_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="1234567890"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <EditText
+        android:id="@+id/cons_petname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Pet Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/cons_diagnosis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <EditText
+        android:id="@+id/cons_diagnosis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Diagnosis"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="false"
+        app:layout_constraintBottom_toTopOf="@+id/cons_addbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <EditText
+        android:id="@+id/cons_prescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Prescription"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="false"
+        app:layout_constraintBottom_toTopOf="@+id/cons_charges"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/cons_date"
+        android:layout_width="110dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cons_addbutton"
+        android:layout_width="180dp"
+        android:layout_height="63dp"
+        android:text="Add"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="100dp"
+        app:iconTint="#171212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
